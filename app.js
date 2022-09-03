@@ -27,7 +27,7 @@ const compare = (pSel, cSel) => {
 
 const main = () => {
     const pSel = prompt().toLowerCase();
-    console.log(pSel);
+    //console.log(pSel);
     if (pSel !== "paper" && pSel !== "rock" && pSel !== "scissors") {
         console.log("Invalid Input, input to rock, scissors or paper to play");
         main();
