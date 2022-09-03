@@ -1,5 +1,5 @@
 let comScore = 0;
-let playerScore =0;
+let playerScore = 0;
 let gameRound = 1;
 
 const computerPlay = () => {
@@ -9,21 +9,21 @@ const computerPlay = () => {
 }
 //computerPlay();
 const compare = (pSel, cSel) => {
-    if(pSel=="rock" || pSel=="paper" || pSel=="scissors"){
-    if (pSel == "rock" && cSel == "paper") {
-        console.log("You Lose!, paper beats rock!");
-        comScore++;
-    } else if (pSel == "scissors" && cSel == "rock") {
-        console.log("You Win!, rock beats scissors!");
-        comScore++;
-    } else if (pSel == "paper" && cSel == "scissors") {
-        console.log("You lose!, scissors beats paper!");
-        comScore++;
-    } else {
-        console.log(`You win, ${pSel} beats ${cSel}`);
-        playerScore++;
-    }
-}
+     {
+        if (pSel == "rock" && cSel == "paper") {
+            console.log("You Lose!, paper beats rock!");
+            comScore++;
+        } else if (pSel == "scissors" && cSel == "rock") {
+            console.log("You Win!, rock beats scissors!");
+            comScore++;
+        } else if (pSel == "paper" && cSel == "scissors") {
+            console.log("You lose!, scissors beats paper!");
+            comScore++;
+        } else {
+            console.log(`You win, ${pSel} beats ${cSel}`);
+            playerScore++;
+        }
+    
 }
 
 const main = () => {
@@ -36,23 +36,23 @@ const main = () => {
     let cSel = computerPlay();
     if (pSel === cSel) {
         console.log('Draw, replay')
-       //main();
-    } else {
+        //main();
+    } else if (pSel === "rock" || pSel === "paper" || pSel === "scissors"){
         compare(pSel, cSel);
     }
 }
-const play=()=>{
-    while (gameRound<5){
+const play = () => {
+    while (gameRound < 5) {
         main();
         gameRound++;
         console.log(`player score = ${playerScore}, computer score = ${comScore}`)
     }
-    if(gameRound==5){
-        if(playerScore>comScore){
+    if (gameRound == 5) {
+        if (playerScore > comScore) {
             alert("You win!");
-        }else{
+        } else {
             alert("computer wins!");
         }
     }
-    
+
 }
