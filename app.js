@@ -45,11 +45,12 @@ const play=()=>{
     while (gameRound<5){
         main();
     }
-    if(playerScore==comScore){
-        main();
-    }else if(playerScore>comScore){
-        alert("You win!");
-    }else{
-        alert("computer wins!");
+    if(gameRound==5){
+        if(playerScore>comScore){
+            alert("You win!");
+        }else{
+            alert("computer wins!");
+        }
     }
+    
 }
