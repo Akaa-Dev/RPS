@@ -9,6 +9,7 @@ const computerPlay = () => {
 }
 //computerPlay();
 const compare = (pSel, cSel) => {
+    if(pSel=="rock" || pSel=="paper" || pSel=="scissors"){
     if (pSel == "rock" && cSel == "paper") {
         console.log("You Lose!, paper beats rock!");
         comScore++;
@@ -22,18 +23,17 @@ const compare = (pSel, cSel) => {
         console.log(`You win, ${pSel} beats ${cSel}`);
         playerScore++;
     }
-    gameRound++;
+}
 }
 
 const main = () => {
-    const pSel = prompt().toLowerCase();
+    let pSel = prompt().toLowerCase();
     //console.log(pSel);
     if (pSel !== "paper" && pSel !== "rock" && pSel !== "scissors") {
         console.log("Invalid Input, input to rock, scissors or paper to play");
         //main();
     }
-
-    const cSel = computerPlay();
+    let cSel = computerPlay();
     if (pSel === cSel) {
         console.log('Draw, replay')
        //main();
@@ -44,6 +44,7 @@ const main = () => {
 const play=()=>{
     while (gameRound<5){
         main();
+        gameRound++;
         console.log(`player score = ${playerScore}, computer score = ${comScore}`)
     }
     if(gameRound==5){
