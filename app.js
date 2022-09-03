@@ -30,13 +30,13 @@ const main = () => {
     //console.log(pSel);
     if (pSel !== "paper" && pSel !== "rock" && pSel !== "scissors") {
         console.log("Invalid Input, input to rock, scissors or paper to play");
-        main();
+        //main();
     }
 
     const cSel = computerPlay();
     if (pSel === cSel) {
         console.log('Draw, replay')
-        main();
+       //main();
     } else {
         compare(pSel, cSel);
     }
@@ -44,6 +44,7 @@ const main = () => {
 const play=()=>{
     while (gameRound<5){
         main();
+        console.log(`player score = ${playerScore}, computer score = ${comScore}`)
     }
     if(gameRound==5){
         if(playerScore>comScore){
