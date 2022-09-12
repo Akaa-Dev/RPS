@@ -1,0 +1,66 @@
+.score{
+   font-size: 100px;
+   color: #2c6cadf3;
+}
+#score-panel{
+    margin-top: 20px;
+}
+#game{
+    display: flex;
+   justify-content: center;
+    margin-top: 5em;
+}
+#game button{
+    height: 5rem;
+    width: 6rem;
+    border-radius: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+#dashboard{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 30px;
+}
+#dashboard .player{
+    background-color: #233437;
+    height: 150px;
+    width: 200px;
+    text-align: center;
+    color: aliceblue;
+    padding-top: 15px;
+    border-radius: 20%;
+}
+.playerIcon{
+    margin-top: 1.5rem;
+}
+#control{
+    display: flex;
+    justify-content: center;
+    margin-top: 4em;
+}
+#control button{
+    width: 110px;
+    height: 30px;
+    border: #233437;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #ef565c;
+}
+body{
+    margin-top: 5em;
+}
+.winner{
+    font-size: 40px;
+    text-align: center;
+    color: #046906;
+    margin-top:2em ;
+}
+.loser{
+    font-size: 40px;
+    text-align: center;
+    color: #f93807;
+    margin-top:2em ;
+}

@@ -1,13 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.<span>0</span>">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/572a6aaa5d.js" crossorigin="anonymous"></script>
     <title>rock paper scissors</title>
 </head>
+
 <body>
-    
+    <div id="dashboard">
+        <div id="computer" class="player">
+            <div class="playerName">Computer</div>
+            <div class="playerIcon" id="computer_Icon"><i class="fa-solid fa-hand-back-fist fa-5x"></i></div>
+        </div>
+        <div id="score-panel">
+            <div id="score"> 
+                <span class="score" id="comScore">0</span>
+                <span class="score">:</span>
+                <span class="score" id="playerScore">0</span></div>
+
+        </div>
+        <div id="player" class="player">
+            <div class="playerName">You</div>
+            <div class="playerIcon" id="player_Icon"><i class="fa-solid fa-hand-back-fist fa-5x"></i></div>
+        </div>
+    </div>
+    <div id="game">
+        <button id="rock"><i class="fa-solid fa-hand-back-fist fa-5x"></i></button>
+        <button id="paper"><i class="fa-solid fa-hand fa-5x"></i></button>
+        <button id="scissors"><i class="fa-solid fa-hand-scissors fa-5x fa-rotate-90"></i></button>
+    </div>
+    <div id="control">
+        <button id="restart">Restart</i></button>
+    </div>
     <script src="app.js"></script>
 </body>
+
 </html>
